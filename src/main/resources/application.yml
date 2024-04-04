@@ -1,0 +1,16 @@
+# @format
+
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://${DB_HOST}:5432/university
+        username: postgres
+        password: 13012014
+        hikari:
+            initialization-fail-timeout: 0
+jpa:
+    database-platform: org.hibernate.dialect.PostgresPlusDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+        ddl-auto: create
